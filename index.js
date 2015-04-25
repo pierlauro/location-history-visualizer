@@ -67,7 +67,7 @@
 
 			function getLocationDataFromJson ( data ) {
 				var SCALAR_E7 = 0.0000001, // Since Google Takeout stores latlngs as integers
-					locations = JSON.parse( data ).locations;
+					locations = json_parse( data ).locations;
 				
 				if(fromDate && toDate) {
 					i = locations.length;
